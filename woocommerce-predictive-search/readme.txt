@@ -3,7 +3,7 @@
 Contributors: a3rev, nguyencongtuan
 Tags: WooCommerce search, Predictive Search, WooCommerce, Predictive Search, Live Search, Elementor WooCommerce Search
 Requires at least: 6.0
-Tested up to: 6.6
+Tested up to: 6.7
 Stable tag: 6.1.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -211,7 +211,7 @@ You can use this plugin only when you have installed the WooCommerce plugin.
 
 = 5.9.0 - 2023/12/08 =
 * This release adds a new developer trigger for firing custom scripts on Product Cards on search results pages. 
-* Dev - Define trigger “ps-result-items-added” after items are appended to search results page so 3rd party plugins can catch this event and add their custom script, for example masonry all items again.
+* Dev - Define trigger ï¿½ps-result-items-addedï¿½ after items are appended to search results page so 3rd party plugins can catch this event and add their custom script, for example masonry all items again.
 
 = 5.8.4 - 2023/11/22 =
 * This maintenance release has plugin framework updates for compatibility with PHP 8.1 onwards, plus compatibility with WordPress 6.4.1 and WooCommerce 8.2
@@ -282,7 +282,7 @@ You can use this plugin only when you have installed the WooCommerce plugin.
 * Tweak - Add filter on generate_border_style_css
 * Tweak - Add filter on generate_border_corner_css
 * Tweak - Test for compatibility with WooCommerce 6.5
-* Framework – Upgrade Plugin Framework to version 2.6.0
+* Framework ï¿½ Upgrade Plugin Framework to version 2.6.0
 * Security - Various code hardening tweaks.
 * Security - Escape all $-variable
 * Security - Sanitize all $_REQUEST, $_GET, $_POST
@@ -353,22 +353,22 @@ You can use this plugin only when you have installed the WooCommerce plugin.
 * Tweak - Update JavaScript on plugin framework for work compatibility with latest version of jQuery
 * Fix - Replace .bind( event, handler ) by .on( event, handler ) for compatibility with latest version of jQuery
 * Fix - Replace :eq() Selector by .eq() for compatibility with latest version of jQuery
-* Fix - Replace .error() by .on( “error” ) for compatibility with latest version of jQuery
+* Fix - Replace .error() by .on( ï¿½errorï¿½ ) for compatibility with latest version of jQuery
 * Fix - Replace :first Selector by .first() for compatibility with latest version of jQuery
 * Fix - Replace :gt(0) Selector by .slice(1) for compatibility with latest version of jQuery
 * Fix - Remove jQuery.browser for compatibility with latest version of jQuery
 * Fix - Replace jQuery.isArray() by Array.isArray() for compatibility with latest version of jQuery
-* Fix - Replace jQuery.isFunction(x) by typeof x === “function” for compatibility with latest version of jQuery
-* Fix - Replace jQuery.isNumeric(x) by typeof x === “number” for compatibility with latest version of jQuery
+* Fix - Replace jQuery.isFunction(x) by typeof x === ï¿½functionï¿½ for compatibility with latest version of jQuery
+* Fix - Replace jQuery.isNumeric(x) by typeof x === ï¿½numberï¿½ for compatibility with latest version of jQuery
 * Fix - Replace jQuery.now() by Date.now() for compatibility with latest version of jQuery
 * Fix - Replace jQuery.parseJSON() by JSON.parse() for compatibility with latest version of jQuery
 * Fix - Remove jQuery.support for compatibility with latest version of jQuery
 * Fix - Replace jQuery.trim(x) by x.trim() for compatibility with latest version of jQuery
 * Fix - Replace jQuery.type(x) by typeof x for compatibility with latest version of jQuery
-* Fix - Replace .load( handler ) by .on( “load”, handler ) for compatibility with latest version of jQuery
+* Fix - Replace .load( handler ) by .on( ï¿½loadï¿½, handler ) for compatibility with latest version of jQuery
 * Fix - Replace .size() by .length for compatibility with latest version of jQuery
 * Fix - Replace .unbind( event ) by .off( event ) for compatibility with latest version of jQuery
-* Fix - Replace .unload( handler ) by .on( “unload”, handler ) for compatibility with latest version of jQuery
+* Fix - Replace .unload( handler ) by .on( ï¿½unloadï¿½, handler ) for compatibility with latest version of jQuery
 
 = 5.3.9 - 2020/12/08 =
 * This maintenance release is for compatibility with WordPress major version 5.6 and WooCommerce version 4.8.0
@@ -562,7 +562,7 @@ You can use this plugin only when you have installed the WooCommerce plugin.
 * Framework - Add Framework version for all style and script files
 * Tweak - Update for full compatibility with a3rev Dashboard plugin
 * Tweak - Change OLD thumbnail image name shop_catalog to woocommerce_thumbnail for compatibility with WC 3.3.0. Support back compatibility to WooCommerce v3.2.6
-* Refactor - Exclude out of stock mysql query to work for sites that have 1,000’s of out of stock products.
+* Refactor - Exclude out of stock mysql query to work for sites that have 1,000ï¿½s of out of stock products.
 * Tweak - Test for compatibility with WordPress 4.9.4
 * Tweak - Test for compatibility with WooCommerce 3.3.1
 
@@ -621,7 +621,7 @@ You can use this plugin only when you have installed the WooCommerce plugin.
 * Tweak - Change call direct to Product properties with new function that are defined on WC v3.0
 * Tweak - Called sync data from PS database after WC data is saved on new CRUD
 * Tweak - Get outofstock from term instead of product meta on new WC v3.0
-* Tweak - Change priority for save_post action so that it’s called after WooCommerce save the product data, to get the correct data on WC v3.0
+* Tweak - Change priority for save_post action so that itï¿½s called after WooCommerce save the product data, to get the correct data on WC v3.0
 
 = 3.7.0 - 2017/02/06 =
 * Feature - Show or hide Stock Qty on Search Box dropdown results and Search Result page. Pulled from WooCommerce Stock Management.
