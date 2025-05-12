@@ -7,10 +7,10 @@ Version: 6.1.1
 Author: a3rev Software
 Author URI: https://www.a3rev.com/
 Requires at least: 6.0
-Tested up to: 6.7
+Tested up to: 6.8
 Text Domain: woocommerce-predictive-search
 WC requires at least: 6.0.0
-WC tested up to: 9.0.0
+WC tested up to: 9.8.0
 Domain Path: /languages
 License: GPLv2 or later
 
