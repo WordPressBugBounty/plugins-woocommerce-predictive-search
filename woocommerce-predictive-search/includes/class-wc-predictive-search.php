@@ -47,6 +47,10 @@ class Main
 
 	public function general_sql( $main_sql ) {
 
+		if ( empty( $main_sql ) ) {
+			return '';
+		}
+
 		$select_sql = '';
 		if ( is_array( $main_sql['select'] ) && count( $main_sql['select'] ) > 0 ) {
 			$select_sql = implode( ', ', $main_sql['select'] );
@@ -171,6 +175,9 @@ class Main
 			$wpml_sql['where'][] = " AND ic.language_code = '".$current_lang."' AND ic.element_type = 'post_{$post_type}' ";
 		}
 
+		if ( ! is_array( $main_sql ) ) {
+			$main_sql = array();
+		}
 		$main_sql = array_merge_recursive( $main_sql, $wpml_sql );
 
 		$sql = $this->general_sql( $main_sql );
@@ -185,6 +192,10 @@ class Main
 		global $wpdb;
 
 		$sql = $this->get_product_search_sql( $search_keyword, 1, 0, $woocommerce_search_focus_enable, $woocommerce_search_focus_plugin, $post_type, $term_id, $current_lang, true );
+
+		if ( empty( $sql ) ) {
+			return false;
+		}
 
 		$sql = "SELECT EXISTS( " . $sql . ")";
 
